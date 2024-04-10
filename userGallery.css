@@ -1,0 +1,88 @@
+ * {
+     font-family: "Poppins", sans-serif;
+ }
+
+ .mySlides {
+     display: none;
+ }
+
+
+ .hero-image {
+     background-image: url(Gallery/hero3.png);
+     height: 75%;
+     min-height: 850px;
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+
+ }
+
+ .hero-text {
+     font-family: "Raleway", sans-serif;
+     text-align: center;
+     font-size: 40px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: white;
+ }
+
+ .navbar {
+     border-bottom: 0.1px solid rgba(255, 255, 255, 0.534);
+     background-color: #FBF9F1;
+     color: #000000;
+     font-family: "Poppins", sans-serif;
+     width: 100%;
+     position: fixed;
+     top: 0;
+     z-index: 1001;
+ }
+
+ .navbar-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+ }
+
+ h1 {
+     margin: 0;
+ }
+
+ .nav-links {
+     list-style: none;
+     display: flex;
+     padding-right: 70px;
+ }
+
+ .nav-links li {
+     padding: 0 15px;
+ }
+
+ .nav-links a {
+     text-decoration: none;
+     color: inherit;
+     font-weight: bold;
+ }
+
+ .nav-links a:hover {
+     color: #525252;
+ }
+
+ @media (max-width: 600px) {
+     .navbar-container {
+         flex-direction: column;
+     }
+
+     .nav-links {
+         padding-top: 10px;
+     }
+
+     .nav-links li {
+         padding: 5px 0;
+
+     }
+ }

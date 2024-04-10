@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="whale.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="userGallery.css">
+</head>
+<title>Pictures</title>
+
+<body>
+
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="snapchat.png" width="50" height="50" alt="logo" />
+                <h1>Title</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="landing.html">Home</a></li>
+                    <li><a href="watchedList.html">Gallery</a></li>
+                    <li><a href="userGallery.html">Pictures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Scenes from Miyazaki</h1>
+            <p>create your own album.</p>
+        </div>
+    </div>
+
+
+    <!-- Thanks W3 For providing me with a template of this slider! -->
+
+
+    <h2 class="w3-center">Scenes</h2>
+    <div class="w3-content w3-display-container" id="slideshowContainer">
+        <img class="mySlides" src="Template-Images/ex1.png" style="width:100%">
+        <img class="mySlides" src="Template-Images/ex2.png" style="width:100%">
+        <img class="mySlides" src="Template-Images/ex3.png" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <div style="text-align:center; margin-top:20px;">
+        <input type="file" id="imageInput" accept="image/*">
+        <button onclick="addImage()">Add Image</button>
+        <button onclick="removeImage()">Remove Current Image</button>
+    </div>
+
+    <script src="userGallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 25px;
+    padding: 0;
+    background-color: #FBF9F1;
+}
+
+.hero-image {
+    background-image: url(Gallery/hero2.jpg);
+    height: 100%;
+    min-height: 800px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.hero-text {
+    font-family: "Raleway", sans-serif;
+
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.navbar {
+    border-bottom: 0.1px solid rgba(255, 255, 255, 0.534);
+    background-color: #FBF9F1;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    position: fixed;
+    /*fixed it!!!!!
+    /* position: fixed; */
+    /* Fix the navbar to the top of the page */
+    top: 0;
+    z-index: 1001;
+    /* Ensure it stays above other content */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    /* Space between title and nav links */
+    align-items: center;
+    /* Center items vertically */
+    padding: 10px 20px;
+    /* Add some padding on the outside */
+}
+
+h1 {
+    margin: 0;
+    /* Remove default margin from the h1 */
+}
+
+.nav-links {
+    list-style: none;
+    /* Remove default list styling */
+    display: flex;
+    padding-right: 70px;
+    /* Display the links in a row */
+}
+
+.nav-links li {
+    padding: 0 15px;
+    /* Space out the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: inherit;
+    /* The links will inherit the white color from the navbar */
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #525252;
+}
+
+
+@media (max-width: 600px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        padding-top: 10px;
+    }
+
+    .nav-links li {
+        padding: 5px 0;
+    }
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container {
+    max-width: 7500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter {
+    margin-bottom: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sort-buttons {
+    display: flex;
+}
+
+.sort-button {
+    font-family: "Poppins", sans-serif;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #FBF9F1;
+    color: black;
+    padding: 5px 10px;
+    border-color: black;
+    border-radius: 5px;
+    outline: none;
+}
+
+.sort-button:hover {
+    background-color: grey;
+}
+
+.sort-button.active {
+    background-color: grey;
+}
+
+.movie-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+.movie-card {
+    font-family: "Poppins", sans-serif;
+    background-color: #FBF9F1;
+    border: 0.5px solid;
+    border-color: grey;
+    border-radius: 5px;
+    padding: 15px;
+    width: 700px;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.movie-card.hide {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.movie-card h3 {
+    margin-top: 0;
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Hover effect */
+.movie-card:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+#search-input {
+    font-family: "Poppins", sans-serif;
+    padding: 5px 10px;
+    margin-right: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+}
+
+.rating-input {
+    margin-top: 10px;
+}
